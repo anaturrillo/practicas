@@ -1,3 +1,12 @@
+/*
+ENUNCIADO
+clonar el objeto 'obj' de manera tal que si realizo
+clonDeObj.a.b.c = 3
+
+al loguear 'obj.a.b.c' el resultado sea 2
+
+*/
+
 const obj = {
     a: {
         b: {
@@ -31,6 +40,6 @@ function cloneThis (obj) {
 
 const clone = cloneThis(obj);
 
-clone.a.b.c = 5;
+clone.a.b.c = 3;
 
 console.log(obj.a.b.c) // 2
